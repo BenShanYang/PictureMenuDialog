@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_album"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pic_album_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_album"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="相册"
+                android:textColor="#43A0FB"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <FrameLayout
+            android:id="@+id/fl_camera"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pic_camera_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_camera"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="拍照"
+                android:textColor="#43A0FB"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pic_cancel_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#8B8B8B"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</FrameLayout>
