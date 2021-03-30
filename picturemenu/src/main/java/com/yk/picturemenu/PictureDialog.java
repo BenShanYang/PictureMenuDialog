@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -65,6 +66,46 @@ public abstract class PictureDialog extends Dialog implements View.OnClickListen
                 dismiss();
             }
         }
+    }
+
+    /**
+     * 获取选择图片菜单按钮
+     *
+     * @return
+     */
+    public TextView getAlbumMenu() {
+        return (TextView) findViewById(R.id.tv_album);
+    }
+
+    /**
+     * 获取拍照菜单按钮
+     *
+     * @return
+     */
+    public TextView getCameraMenu() {
+        return (TextView) findViewById(R.id.tv_camera);
+    }
+
+    /**
+     * 设置选择图片菜单按钮文字
+     *
+     * @param text 菜单文字
+     * @return
+     */
+    public PictureDialog setAlbumText(CharSequence text) {
+        ((TextView) findViewById(R.id.tv_album)).setText(text);
+        return PictureDialog.this;
+    }
+
+    /**
+     * 设置拍照菜单按钮文字
+     *
+     * @param text 菜单文字
+     * @return
+     */
+    public PictureDialog setCameraText(CharSequence text) {
+        ((TextView) findViewById(R.id.tv_camera)).setText(text);
+        return PictureDialog.this;
     }
 
     /**
