@@ -66,6 +66,5 @@
             android:text="取 消"
             android:textColor="#999999"
             android:textSize="15sp" />
-
     </LinearLayout>
 </FrameLayout>
